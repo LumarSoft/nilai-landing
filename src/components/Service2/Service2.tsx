@@ -2,7 +2,7 @@ import { FramerComponent } from "../Framer/FramerComponent";
 
 export const Service2 = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 xl:gap-20 lg:justify-between ">
+    <div className="flex flex-col-reverse lg:flex-row gap-6 xl:gap-20 lg:justify-between ">
       <FramerComponent
         style="w-full h-96 bg-neutral-400 rounded-md lg:max-w-xl lg:h-[40rem]"
         animationInitial={{ x: -200, opacity: 0 }}

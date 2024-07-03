@@ -5,7 +5,7 @@ export const Contact = () => {
         Contactanos
       </h2>
       <form className="flex flex-col gap-4 mt-12">
-        <div className="flex gap-10">
+        <div className="flex md:gap-10 flex-col md:flex-row gap-4">
           <label className="flex flex-col w-full">
             Email
             <input className="py-2 rounded bg-neutral-400 px-2 text-black" />
