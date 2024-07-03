@@ -6,6 +6,7 @@ import { WeProvide } from "@/components/WeProvide/WeProvide";
 import { Footer } from "@/components/Footer/Footer";
 import { TypeInsurance } from "@/components/TypeInsurance/TypeInsurance";
 import { Companys } from "@/components/Companys/Companys";
+import { Contact } from "@/components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -14,9 +15,11 @@ export default function Home() {
         <Hero />
         <TypeInsurance />
         <Service1 />
+        <Service2 />
         <WeProvide />
         <Companys />
         <Testimonials />
+        <Contact />
       </main>
       <Footer />
     </section>

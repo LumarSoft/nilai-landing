@@ -10,19 +10,20 @@ export const Hero = () => {
         animationAnimate={{ x: 0, opacity: 1 }}
       >
         <h1 className="text-4xl font-bold md:text-5xl max-lg:text-center">
-          Protegé <b className="underline decoration-yellow-300">tu futuro</b>
+          Eleva tu negocio{" "}
+          <b className="underline decoration-black">al siguiente nivel</b>
         </h1>
-        <p className="text-neutral-400 max-lg:text-center">
-          Somos una empresa familiar con más de 49 años de historia en el mercado, dedicados a la intermediacion en la celebración de contratos de seguros y gestoría del automotor.
-
-          Desde John Pellegrini Management Group, nos dedicamos a ofrecerte la
-          tranquilidad que necesitas para enfrentar cualquier eventualidad. Con
-          una amplia gama de productos, estamos aquí para ayudarte a proteger lo que más
-          valoras. Nuestro compromiso es brindarte el mejor servicio y
-          asesoramiento personalizado para que siempre te sientas <b>seguro.</b>
+        <p className="text-neutral-700 max-lg:text-center">
+          Somos Nilai, una empresa especialista en comercio marketplace y{" "}
+          <b>COMERCIALIZADORA B2C</b>. Nos dedicamos a ofrecerte soluciones
+          innovadoras y personalizadas para potenciar tu negocio en el mundo
+          digital. Con una amplia gama de productos y servicios, estamos aquí
+          para ayudarte a alcanzar el éxito en el competitivo mercado actual.
+          Nuestro compromiso es brindarte el mejor servicio y asesoramiento
+          personalizado para que siempre te sientas <b>apoyado.</b>
         </p>
         <div className="max-lg:text-center">
-          <button className="bg-[#dacf76] hover:bg-[#b8ac63] text-black py-3 w-1/2 rounded-md transition">
+          <button className="bg-black hover:bg-neutral-900 text-white py-3 w-1/2 rounded-md transition">
             Contactanos
           </button>
         </div>

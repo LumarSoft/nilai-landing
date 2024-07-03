@@ -36,9 +36,9 @@ export const WeProvide = () => {
         animationTransition={{ duration: 0.3, delay: 0.1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <h3 className="text-[#dacf76] font-semibold">Qué Ofrecemos</h3>
+        <h3 className="font-semibold">Qué Ofrecemos</h3>
         <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold">
-          Brindamos soluciones avanzadas para proteger tu futuro
+          Brindamos la mejor solución para tu negocio
         </h2>
       </FramerComponent>
       <FramerComponent
@@ -49,53 +49,70 @@ export const WeProvide = () => {
         animationViewPort={{ once: true, offset: 0.4 }}
       >
         <FramerComponent
-          style="flex flex-col p-6 w-full h-80 lg:h-64 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_rgba(218,207,118,0.75)] transition-shadow duration-300"
+          style="flex flex-col p-6 h-96 w-full bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_black] transition-shadow duration-300"
           key={1}
           animationInitial={{ opacity: 0, y: 50 }}
           animationVariants={itemAnimado}
         >
-          <h3 className="text-[#dacf76] font-semibold text-center mb-4">
-            Localización
+          <h3 className="font-semibold text-center mb-4">
+            Comercialización Online
           </h3>
-          <p className="text-white">
-            Brindamos nuestros servicios en tres sucursales: Rosario, Funes y
-            Pueblo Esther. Contamos con un gran equipo de jóvenes profesionales,
-            consolidando una tercera generación en nuestra historia.
-          </p>
+
+          <ul className="text-white">
+            <li>Diseño de Plan Estratégico</li>
+            <li>Definición propósitos de proyecto de negocio</li>
+            <li>Análisis interno y externo</li>
+            <li>Establecimiento de objetivos</li>
+            <li>Elaboración de presupuesto</li>
+            <li>Desarrollo e implementación del plan de acción</li>
+            <li>Capacitación RRHH sobre el nuevo entorno comercial</li>
+          </ul>
         </FramerComponent>
         <FramerComponent
-          style="flex flex-col p-6 w-full h-80 lg:h-64 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_rgba(218,207,118,0.75)] transition-shadow duration-300"
+          style="flex flex-col p-6 w-full h-96  bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_black] transition-shadow duration-300"
           key={2}
           animationInitial={{ opacity: 0, y: 50 }}
           animationVariants={itemAnimado}
         >
-          <h3 className="text-[#dacf76] font-semibold text-center mb-4">
-            Misión
+          <h3 className="font-semibold text-center mb-4">
+            Marketing
           </h3>
-          <p className="text-white">
-            Nuestra misión día a día es brindar acompañamiento a nuestros
-            asegurados. Pensamos el modelo de cercanía con este propósito, poder
-            tener un vínculo fuerte, brindar seguridad y asesoramiento
-            constante.
-          </p>
+
+          <ul className="text-white">
+            <li>Diseño y puesta en marcha de sitios online</li>
+            <li>Integraciones y sincronizaciones plataformas</li>
+            <li>Diseño digital</li>
+            <li>Comunity</li>
+            <li>Generación de tráfico</li>
+            <li>Redes sociales</li>
+            <li>Ads</li>
+          </ul>
         </FramerComponent>
         <FramerComponent
-          style="flex flex-col p-6 w-full h-80 lg:h-64 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_rgba(218,207,118,0.75)] transition-shadow duration-300"
+          style="flex flex-col p-6 w-full h-96 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_black] transition-shadow duration-300"
           key={3}
           animationInitial={{ opacity: 0, y: 50 }}
           animationVariants={itemAnimado}
         >
-          <h3 className="text-[#dacf76] font-semibold text-center mb-4">
-            Visión
+          <h3 className="font-semibold text-center mb-4">
+            Gestión
           </h3>
-          <p className="text-white">
-            Sin dudas, perdurar en el tiempo es sinónimo de compromiso para
-            quienes nos eligen. Seguiremos siempre sobre esa base, que nos
-            permite continuar con el compromiso y los valores que caracterizaron
-            a nuestra organización desde sus inicios.
-          </p>
+            <ul className="text-white">
+              <li>Altas/Modificaciones/Bajas de publicaciones</li>
+              <li>Verificación publicaciones en sitios</li>
+              <li>Gestión activa 24/7 Respuestas (consultas/preguntas)</li>
+              <li>Procesamiento de pedidos</li>
+              <li>Generación de etiquetas</li>
+              <li>Coordinación Facturación</li>
+              <li>Creación de colectas</li>
+              <li>Trazabilidad de pedidos</li>
+              <li>Seguimiento de stocks</li>
+              <li>Controler de liquidaciones</li>
+            </ul>
         </FramerComponent>
       </FramerComponent>
     </div>
   );
 };
+
+<div className="h-auto"></div>;

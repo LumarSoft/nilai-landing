@@ -20,7 +20,7 @@ export const Testimonials = () => {
         animationTransition={{ duration: 0.3, delay: 0.1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <h3 className="text-[#dacf76] font-semibold">Que dicen de nosotros</h3>
+        <h3 className="font-semibold">Que dicen de nosotros</h3>
         <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold">
           Testimonios
         </h2>
@@ -102,8 +102,7 @@ const CarouselComponent = () => {
           ))}
         </CarouselContent>
       </FramerComponent>
-      <CarouselPrevious className="hidden lg:flex" />
-      <CarouselNext className="hidden lg:flex" />
+  
     </Carousel>
   );
 };
