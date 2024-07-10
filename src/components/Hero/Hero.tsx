@@ -35,7 +35,7 @@ export const Hero = () => {
       >
         <div className="relative w-full h-auto pt-10">
           <Image
-            src="/manos.jpg"
+            src="/amazon.jpeg"
             width={1440}
             height={960}
             objectFit="cover"

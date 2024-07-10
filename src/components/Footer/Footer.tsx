@@ -1,45 +1,45 @@
-import Image from "next/image";
 export const Footer = () => {
   return (
-    <footer className="bg-black py-4">
+    <footer className="bg-gray-100 py-6 border-t border-zinc-200">
       <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col gap-4 justify-center items-center md:items-start">
           <div className="flex items-center gap-2">
-            <span className="text-lg font-semibold text-white">
-              Información
-            </span>
+            <span className="text-xl font-bold text-black">Nilai</span>
           </div>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quos
-            temporibus ad quisquam odio nihil ipsum corporis eaque ex ipsam
-            tempora commodi harum, distinctio dolor voluptatum magni impedit!
-            Perspiciatis, doloribus.
+          <p className="text-sm text-gray-700 max-w-md max-sm:text-center">
+            Somos expertos en comercialización online, marketing digital y
+            gestión de e-commerce. Ofrecemos soluciones integrales para impulsar
+            tu negocio en el mundo digital, desde la planificación estratégica
+            hasta la implementación y optimización de tu tienda online.
           </p>
         </div>
-        <div className="flex flex-col gap-4 justify-center items-center">
-          <h4 className="text-lg font-semibold text-white">Contacto</h4>
-          <div className="flex flex-col gap-2 items-center">
+        <div className="flex flex-col gap-4 justify-center items-center md:items-end">
+          <h4 className="text-lg font-semibold text-black">Contáctanos</h4>
+          <div className="flex flex-col gap-2 items-center md:items-end">
             <div className="flex items-center gap-2">
-              <span className="text-sm text-white">(+54) 9341 569 0470</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm text-white">Ejemplo@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm text-white">
-                balbo 4150, Rosario, Santa Fe, Argentina
+              <span className="text-sm text-gray-800">
+                📞 (+54) 1234 567 890
               </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-gray-800">
+                ✉️ direccionNilai@gmail.com
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-gray-800">🏢 Dirección acá</span>
             </div>
           </div>
         </div>
-        <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">
-          {" "}
-          <Image
-            src="/ssn-logo.png"
-            width={280}
-            height={280}
-            alt="Imagen del logo de la Superintendencia de Seguros de la Nación"
-          />
+      </div>
+      <div className="mt-8 text-center text-sm text-black">
+        © 2024 Nilai - Developed by{" "}
+        <a
+          className="font-semibold"
+          href="https://ar.linkedin.com/company/lumar-soft"
+          target="_blank"
+        >
+          LumarSoft
         </a>
       </div>
     </footer>

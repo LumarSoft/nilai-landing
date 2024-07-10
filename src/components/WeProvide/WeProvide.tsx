@@ -1,4 +1,6 @@
 import { FramerComponent } from "../Framer/FramerComponent";
+import { FaShoppingCart, FaBullhorn, FaCogs } from "react-icons/fa";
+import { Card } from "./Card";
 
 export const WeProvide = () => {
   const container = {
@@ -36,83 +38,67 @@ export const WeProvide = () => {
         animationTransition={{ duration: 0.3, delay: 0.1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <h3 className="font-semibold">Qué Ofrecemos</h3>
-        <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold">
+        <h3 className="font-semibold text-gray-800">Qué Ofrecemos</h3>
+        <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold text-black">
           Brindamos la mejor solución para tu negocio
         </h2>
       </FramerComponent>
+
       <FramerComponent
-        style="flex flex-col gap-6 lg:flex-row items-center"
+        style="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
         animationVariants={container}
         animationInitial="hidden"
         animationWhileInView="show"
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <FramerComponent
-          style="flex flex-col p-6 h-96 w-full bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_black] transition-shadow duration-300"
-          key={1}
-          animationInitial={{ opacity: 0, y: 50 }}
-          animationVariants={itemAnimado}
-        >
-          <h3 className="font-semibold text-center mb-4">
-            Comercialización Online
-          </h3>
+        <Card
+          icon={<FaShoppingCart className="text-4xl mb-4 text-blue-600" />}
+          title="Comercialización Online"
+          items={[
+            "Diseño de Plan Estratégico",
+            "Definición propósitos de proyecto de negocio",
+            "Análisis interno y externo",
+            "Establecimiento de objetivos",
+            "Elaboración de presupuesto",
+            "Desarrollo e implementación del plan de acción",
+            "Capacitación RRHH sobre el nuevo entorno comercial",
+          ]}
+          itemAnimado={itemAnimado}
+        />
 
-          <ul className="text-white">
-            <li>Diseño de Plan Estratégico</li>
-            <li>Definición propósitos de proyecto de negocio</li>
-            <li>Análisis interno y externo</li>
-            <li>Establecimiento de objetivos</li>
-            <li>Elaboración de presupuesto</li>
-            <li>Desarrollo e implementación del plan de acción</li>
-            <li>Capacitación RRHH sobre el nuevo entorno comercial</li>
-          </ul>
-        </FramerComponent>
-        <FramerComponent
-          style="flex flex-col p-6 w-full h-96  bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_black] transition-shadow duration-300"
-          key={2}
-          animationInitial={{ opacity: 0, y: 50 }}
-          animationVariants={itemAnimado}
-        >
-          <h3 className="font-semibold text-center mb-4">
-            Marketing
-          </h3>
+        <Card
+          icon={<FaBullhorn className="text-4xl mb-4 text-blue-600" />}
+          title="Marketing"
+          items={[
+            "Diseño y puesta en marcha de sitios online",
+            "Integraciones y sincronizaciones plataformas",
+            "Diseño digital",
+            "Community Management",
+            "Generación de tráfico",
+            "Redes sociales",
+            "Ads",
+          ]}
+          itemAnimado={itemAnimado}
+        />
 
-          <ul className="text-white">
-            <li>Diseño y puesta en marcha de sitios online</li>
-            <li>Integraciones y sincronizaciones plataformas</li>
-            <li>Diseño digital</li>
-            <li>Comunity</li>
-            <li>Generación de tráfico</li>
-            <li>Redes sociales</li>
-            <li>Ads</li>
-          </ul>
-        </FramerComponent>
-        <FramerComponent
-          style="flex flex-col p-6 w-full h-96 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_black] transition-shadow duration-300"
-          key={3}
-          animationInitial={{ opacity: 0, y: 50 }}
-          animationVariants={itemAnimado}
-        >
-          <h3 className="font-semibold text-center mb-4">
-            Gestión
-          </h3>
-            <ul className="text-white">
-              <li>Altas/Modificaciones/Bajas de publicaciones</li>
-              <li>Verificación publicaciones en sitios</li>
-              <li>Gestión activa 24/7 Respuestas (consultas/preguntas)</li>
-              <li>Procesamiento de pedidos</li>
-              <li>Generación de etiquetas</li>
-              <li>Coordinación Facturación</li>
-              <li>Creación de colectas</li>
-              <li>Trazabilidad de pedidos</li>
-              <li>Seguimiento de stocks</li>
-              <li>Controler de liquidaciones</li>
-            </ul>
-        </FramerComponent>
+        <Card
+          icon={<FaCogs className="text-4xl mb-4 text-blue-600" />}
+          title="Gestión"
+          items={[
+            "Altas/Modificaciones/Bajas de publicaciones",
+            "Verificación publicaciones en sitios",
+            "Gestión activa 24/7 Respuestas",
+            "Procesamiento de pedidos",
+            "Generación de etiquetas",
+            "Coordinación Facturación",
+            "Creación de colectas",
+            "Trazabilidad de pedidos",
+            "Seguimiento de stocks",
+            "Controler de liquidaciones",
+          ]}
+          itemAnimado={itemAnimado}
+        />
       </FramerComponent>
     </div>
   );
 };
-
-<div className="h-auto"></div>;
