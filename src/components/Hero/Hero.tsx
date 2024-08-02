@@ -11,16 +11,23 @@ export const Hero = () => {
       >
         <h1 className="text-4xl font-bold md:text-5xl max-lg:text-center">
           Eleva tu negocio{" "}
-          <b className="underline decoration-black">al siguiente nivel</b>
+          <b className="underline decoration-black">a otro nivel</b>
         </h1>
         <p className="text-neutral-700 max-lg:text-center">
-          Somos Nilai, una empresa especialista en comercio marketplace y{" "}
-          <b>COMERCIALIZADORA B2C</b>. Nos dedicamos a ofrecerte soluciones
-          innovadoras y personalizadas para potenciar tu negocio en el mundo
-          digital. Con una amplia gama de productos y servicios, estamos aquí
-          para ayudarte a alcanzar el éxito en el competitivo mercado actual.
-          Nuestro compromiso es brindarte el mejor servicio y asesoramiento
-          personalizado para que siempre te sientas <b>apoyado.</b>
+          Somos <b>NILAI</b>, una empresa de servicios especializada en la{" "}
+          <b>inserción y gestión de productos</b> en el mundo de negocios
+          online. La misión del equipo es proveer soluciones llave en mano a
+          fabricantes e importadores optimizando{" "}
+          <b>costos, tiempo y recursos</b> humanos. Desarrollamos planes
+          estratégicos ecommerce contemplando aspectos{" "}
+          <b>
+            comerciales, logísticos, stock, rentabilidad, finanzas y marketing
+            digital
+          </b>
+          . Operamos las plataformas de los marketplaces más efectivos en ventas
+          online en Argentina. Asesoramos, capacitamos y asistimos en forma{" "}
+          <b>personaliza</b> para que la experiencia de comercialización digital
+          sea exitosa.
         </p>
         <div className="max-lg:text-center">
           <button className="bg-black hover:bg-neutral-900 text-white py-3 w-1/2 rounded-md transition">

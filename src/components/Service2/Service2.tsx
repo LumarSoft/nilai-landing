@@ -37,9 +37,6 @@ export const Service2 = () => {
         animationWhileInView={{ y: 0, opacity: 1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <h2 className="text-2xl font-bold">
-          Estadísticas del E-commerce en Argentina
-        </h2>
         <ul className="text-neutral-800 space-y-2">
           {ecommerceStats.map((stat, index) => (
             <li key={index} className="flex items-start">

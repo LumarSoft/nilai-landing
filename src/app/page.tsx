@@ -1,13 +1,11 @@
 import { Hero } from "@/components/Hero/Hero";
 import { Service1 } from "@/components/Service1/Service1";
 import { Service2 } from "@/components/Service2/Service2";
-import { Testimonials } from "@/components/Testimonials/Testimonials";
 import { WeProvide } from "@/components/WeProvide/WeProvide";
 import { Footer } from "@/components/Footer/Footer";
 import { UsService } from "@/components/UsService/UsService";
-import { Companys } from "@/components/Companys/Companys";
-import { Contact } from "@/components/Contact/Contact";
 import { EmailJS } from "@/components/EmailJS/Email";
+import NichoMercado from "@/components/NichoMercado/NichoMercado";
 
 export default function Home() {
   return (
@@ -18,9 +16,7 @@ export default function Home() {
         <Service1 />
         <Service2 />
         <WeProvide />
-        {/* <Companys /> */}
-        {/* <Testimonials /> */}
-        {/* <Contact /> */}
+        <NichoMercado />
         <EmailJS />
       </main>
       <Footer />

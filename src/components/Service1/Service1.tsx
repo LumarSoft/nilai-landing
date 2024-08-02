@@ -35,10 +35,7 @@ export const Service1 = () => {
         animationWhileInView={{ x: 0, opacity: 1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <h3 className="font-semibold">El Mercado Online en Argentina</h3>
-        <h2 className="text-2xl font-bold">
-          Soluciones avanzadas para hacer crecer tu negocio online
-        </h2>
+        <h3 className="font-semibold">CANAL ECOMMERCE ACTUAL EN ARGENTINA</h3>
         <ul className="text-neutral-800 space-y-2">
           {marketStats.map((stat, index) => (
             <li key={index} className="flex items-start">

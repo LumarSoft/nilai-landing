@@ -38,9 +38,8 @@ export const WeProvide = () => {
         animationTransition={{ duration: 0.3, delay: 0.1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <h3 className="font-semibold text-gray-800">Qué Ofrecemos</h3>
         <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold text-black">
-          Brindamos la mejor solución para tu negocio
+          SERVICIOS INTEGRALES
         </h2>
       </FramerComponent>
 

@@ -7,7 +7,7 @@ export const Footer = () => {
             <span className="text-xl font-bold text-black">Nilai</span>
           </div>
           <p className="text-sm text-gray-700 max-w-md max-sm:text-center">
-            Somos expertos en comercialización online, marketing digital y
+            Somos especialistas en comercialización online, marketing digital y
             gestión de e-commerce. Ofrecemos soluciones integrales para impulsar
             tu negocio en el mundo digital, desde la planificación estratégica
             hasta la implementación y optimización de tu tienda online.

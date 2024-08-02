@@ -1,61 +1,77 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+
 export const EmailJS = () => {
   return (
-    <section className="flex flex-col w-full mt-16 px-4">
-      <div className="flex w-full max-w-6xl mx-auto flex-col items-center justify-center bg-white rounded-lg p-6 sm:p-8 md:p-12 lg:p-16">
-        <div className="w-full text-center mb-6">
-          <p className="text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl mb-4">
-            ¡Contáctanos!
-          </p>
-          <span className="text-gray-600">
-            ¿Tiene alguna pregunta o necesita ayuda? Rellene el siguiente
-            formulario y nos pondremos en contacto con usted lo antes posible.
-          </span>
-        </div>
-        <form className="w-full space-y-6">
-          <div>
-            <label
-              className="block text-sm font-medium text-gray-700 mb-2"
-              htmlFor="expName"
-            >
-              Teléfono
-            </label>
-            <input
-              className="text-gray-800 h-10 w-full rounded-md border border-gray-300 px-4 py-2 text-sm bg-white focus:outline-blue-500 focus:border-blue-500"
-              placeholder="Ingresa tu teléfono"
-            />
-          </div>
-          <div>
-            <label
-              className="block text-sm font-medium text-gray-700 mb-2"
-              htmlFor="expEmail"
-            >
-              Email
-            </label>
-            <input
-              className="text-gray-800 h-10 w-full rounded-md border border-gray-300 px-4 py-2 text-sm bg-white focus:outline-blue-500 focus:border-blue-500"
-              placeholder="Ingresa tu email"
-            />
-          </div>
-          <div>
-            <label
-              className="block text-sm font-medium text-gray-700 mb-2"
-              htmlFor="expMessage"
-            >
-              Mensaje
-            </label>
-            <textarea
-              className="text-gray-800 w-full resize-none rounded-md border border-gray-300 px-4 py-2 text-sm bg-white focus:outline-blue-500 focus:border-blue-500"
-              placeholder="Deje su mensaje aquí..."
-            ></textarea>
-          </div>
-          <button
-            className="h-10 w-full rounded-md bg-black text-white text-base font-medium transition-all duration-300 hover:bg-neutral-900 shadow-md hover:shadow-lg"
-            type="submit"
-          >
-            Enviar
-          </button>
-        </form>
+    <Card className="w-full max-w-5xl mx-auto mt-16">
+      <div className=" text-black text-center py-4 px-6 mt-3">
+        <h2 className="text-lg font-semibold sm:text-3xl md:text-2xl lg:text-2xl">
+          Te mostramos la importancia del canal de venta ecommerce en Argentina,
+          contáctanos para establecer una reunión personalizada y conocer más
+          sobre tu empresa.
+        </h2>
       </div>
-    </section>
+      <CardContent className="p-6">
+        <form className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="name">Nombre y Apellido</Label>
+              <Input id="name" placeholder="Ingrese su nombre y apellido" />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="company">Empresa</Label>
+              <Input
+                id="company"
+                placeholder="Ingrese el nombre de su empresa"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="email">eMail</Label>
+              <Input id="email" type="email" placeholder="Ingrese su email" />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="whatsapp">Whatsapp</Label>
+              <Input
+                id="whatsapp"
+                placeholder="Ingrese su número de Whatsapp"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="city">Ciudad</Label>
+              <Input id="city" placeholder="Ingrese su ciudad" />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="links">Indicar Links de tu empresa</Label>
+              <Input id="links" placeholder="Ingrese links de su empresa" />
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="message">Mensaje</Label>
+            <Textarea
+              id="message"
+              placeholder="Deje su mensaje aquí..."
+              className="min-h-[100px]"
+            />
+          </div>
+
+          <div className="flex justify-center">
+            <Button type="submit" className="w-full">
+              ENVIAR
+            </Button>
+          </div>
+        </form>
+      </CardContent>
+    </Card>
   );
 };
