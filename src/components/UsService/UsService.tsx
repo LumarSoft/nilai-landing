@@ -1,18 +1,14 @@
+import { ArrowUp, Rocket, Truck } from "lucide-react";
 import Image from "next/image";
 
 export const UsService = () => {
   return (
-    <div className="container md:px-6 mb-20">
+    <div className="container mx-auto px-4 mb-20">
       <div className="grid gap-6 md:gap-8">
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="text-black bg-white relative overflow-hidden rounded-lg p-6 border border-gray-200 shadow-sm">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 text-2xl font-bold">
-              <Image
-                src="/trcukImport.png"
-                alt="Truck"
-                width={42}
-                height={42}
-              />
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-2xl font-bold">
+              <Truck size={42} className="text-blue-500" />
             </div>
             <div className="mt-4 flex flex-col gap-1">
               <p className="text-base">
@@ -21,52 +17,90 @@ export const UsService = () => {
             </div>
           </div>
           <div className="text-black bg-white relative overflow-hidden rounded-lg p-6 border border-gray-200 shadow-sm">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 text-2xl font-bold">
-              <Image src="/rocket.png" alt="Car" width={42} height={42} />
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-100 text-2xl font-bold">
+              <Rocket size={40} className="text-red-500" />
             </div>
             <div className="mt-4 flex flex-col gap-1">
               <p className="text-base">
-                Potencia tus ventas en el canal de comercionalización de mayor
+                Potencia tus ventas en el canal de comercialización de mayor
                 crecimiento
               </p>
             </div>
           </div>
           <div className="text-black bg-white relative overflow-hidden rounded-lg p-6 border border-gray-200 shadow-sm">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 text-2xl font-bold">
-              <Image src="/Increment.png" alt="Home" width={42} height={42} />
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-2xl font-bold">
+              <ArrowUp size={40} className="text-green-600" />
             </div>
             <div className="mt-4 flex flex-col gap-1">
               <p className="text-base">
-                Incrementá la visibilidad de tu marca y productos
+                Incrementa la visibilidad de tu marca y productos
               </p>
             </div>
           </div>
         </div>
         <div className="text-black bg-white relative overflow-hidden rounded-lg p-6 border border-gray-200 shadow-sm w-full">
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4 justify-around items-center">
             <Image
               src="/mercadolibre.png"
-              alt="Mercado libre"
+              alt="Mercado Libre"
               width={100}
               height={100}
+              className="object-contain"
             />
-
             <Image
               src="/mercadopago.png"
-              alt="Mercado libre"
+              alt="Mercado Pago"
               width={100}
               height={100}
+              className="object-contain"
             />
-
             <Image
               src="/mercadoshops.png"
-              alt="Mercado libre"
+              alt="Mercado Shops"
               width={100}
               height={100}
+              className="object-contain"
+            />
+            <Image
+              src="/logo-mercadoenvios.png"
+              alt="Mercado Envíos"
+              width={100}
+              height={100}
+              className="object-contain"
+            />
+          </div>
+          <div className="flex flex-wrap gap-4 justify-around items-center mt-6">
+            <Image
+              src="/fravega (1).png"
+              alt="Frávega"
+              width={140}
+              height={130}
+              className="object-contain"
+            />
+            <Image
+              src="/megatone.png"
+              alt="Megatone"
+              width={100}
+              height={100}
+              className="object-contain"
+            />
+            <Image
+              src="/woocomerce1.png"
+              alt="WooCommerce"
+              width={150}
+              height={100}
+              className="object-contain"
+            />
+            <Image
+              src="/vtex.png"
+              alt="VTEX"
+              width={150}
+              height={100}
+              className="object-contain"
             />
             <svg
               className="ml-4"
-              width="250"
+              width="230"
               height="79"
               viewBox="0 0 379 79"
               fill="none"
@@ -82,12 +116,9 @@ export const UsService = () => {
               />
             </svg>
           </div>
-
-          <div className="mt-7 flex flex-col gap-1">
-            <p className="text-base">
-              Incrementá la visibilidad de tu marca y productos
-            </p>
-          </div>
+          <p className="text-center font-semibold text-xl mt-10">
+            Plataformas que operamos
+          </p>
         </div>
       </div>
     </div>
