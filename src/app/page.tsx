@@ -10,7 +10,7 @@ import NichoMercado from "@/components/NichoMercado/NichoMercado";
 export default function Home() {
   return (
     <section>
-      <main className="px-4 md:px-28 2xl:px-80 py-28 lg:py-48">
+      <main className="px-4 md:px-28 2xl:px-80 py-28 lg:py-48 overflow-x-hidden">
         <Hero />
         <UsService />
         <Service1 />
