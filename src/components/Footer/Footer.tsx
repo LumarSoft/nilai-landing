@@ -3,9 +3,10 @@ export const Footer = () => {
     <footer className="bg-gray-100 py-6 border-t border-zinc-200">
       <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col gap-4 justify-center items-center md:items-start">
-          <div className="flex items-center gap-2">
-            <span className="text-xl font-bold text-black">Nilai</span>
-          </div>
+        <div className="flex items-center">
+          <img src="/logo-nilai.png" className="h-16 w-16 mt-5" />
+          <h1><i><b>NILAI</b></i></h1>
+        </div>
           <p className="text-sm text-gray-700 max-w-md max-sm:text-center">
             Somos especialistas en comercialización online, marketing digital y
             gestión de e-commerce. Ofrecemos soluciones integrales para impulsar
@@ -18,7 +19,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-2 items-center md:items-end">
             <div className="flex items-center gap-2">
               <span className="text-sm text-gray-800">
-                📞 (+54) 1234 567 890
+                📞 (+54) 341 691 3003
               </span>
             </div>
             <div className="flex items-center gap-2">

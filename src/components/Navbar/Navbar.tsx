@@ -27,7 +27,10 @@ export const Navbar = () => {
       }`}
     >
       <a href={"/"} className="font-bold text-2xl">
-        Nilai
+        <div className="flex items-center">
+          <img src="/logo-nilai.png" className="h-16 w-16 mt-5" />
+          <h1><i>NILAI</i></h1>
+        </div>
       </a>
       <div className="flex gap-2 md:gap-4 items-center">
         <a>
