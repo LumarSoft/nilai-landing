@@ -26,6 +26,9 @@ dependencies:
   framer-motion:
     specifier: ^11.2.12
     version: 11.2.13(react-dom@18.3.1)(react@18.3.1)
+  lucide:
+    specifier: ^0.424.0
+    version: 0.424.0
   lucide-react:
     specifier: ^0.397.0
     version: 0.397.0(react@18.3.1)
@@ -2044,6 +2047,10 @@ packages:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
     dependencies:
       react: 18.3.1
+    dev: false
+
+  /lucide@0.424.0:
+    resolution: {integrity: sha512-1oUWIWwKcFJPqVBDx2PiB+0JcliORi0PqTqwDcUlUC475a/Wao1RKzQv420FNOhgVpHkuZFS2yDY4lYVuxuLsw==}
     dev: false
 
   /merge2@1.4.1:
