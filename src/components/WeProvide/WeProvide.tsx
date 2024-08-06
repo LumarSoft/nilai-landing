@@ -1,4 +1,6 @@
 import { FramerComponent } from "../Framer/FramerComponent";
+import { FaShoppingCart, FaBullhorn, FaCogs } from "react-icons/fa";
+import { Card } from "./Card";
 
 export const WeProvide = () => {
   const container = {
@@ -36,65 +38,65 @@ export const WeProvide = () => {
         animationTransition={{ duration: 0.3, delay: 0.1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <h3 className="text-[#dacf76] font-semibold">Qué Ofrecemos</h3>
-        <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold">
-          Brindamos soluciones avanzadas para proteger tu futuro
+        <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold text-black">
+          SERVICIOS INTEGRALES
         </h2>
       </FramerComponent>
+
       <FramerComponent
-        style="flex flex-col gap-6 lg:flex-row items-center"
+        style="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
         animationVariants={container}
         animationInitial="hidden"
         animationWhileInView="show"
         animationViewPort={{ once: true, offset: 0.4 }}
       >
-        <FramerComponent
-          style="flex flex-col p-6 w-full h-80 lg:h-64 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_rgba(218,207,118,0.75)] transition-shadow duration-300"
-          key={1}
-          animationInitial={{ opacity: 0, y: 50 }}
-          animationVariants={itemAnimado}
-        >
-          <h3 className="text-[#dacf76] font-semibold text-center mb-4">
-            Localización
-          </h3>
-          <p className="text-white">
-            Brindamos nuestros servicios en tres sucursales: Rosario, Funes y
-            Pueblo Esther. Contamos con un gran equipo de jóvenes profesionales,
-            consolidando una tercera generación en nuestra historia.
-          </p>
-        </FramerComponent>
-        <FramerComponent
-          style="flex flex-col p-6 w-full h-80 lg:h-64 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_rgba(218,207,118,0.75)] transition-shadow duration-300"
-          key={2}
-          animationInitial={{ opacity: 0, y: 50 }}
-          animationVariants={itemAnimado}
-        >
-          <h3 className="text-[#dacf76] font-semibold text-center mb-4">
-            Misión
-          </h3>
-          <p className="text-white">
-            Nuestra misión día a día es brindar acompañamiento a nuestros
-            asegurados. Pensamos el modelo de cercanía con este propósito, poder
-            tener un vínculo fuerte, brindar seguridad y asesoramiento
-            constante.
-          </p>
-        </FramerComponent>
-        <FramerComponent
-          style="flex flex-col p-6 w-full h-80 lg:h-64 bg-neutral-500 rounded-md hover:shadow-[0_8px_20px_8px_rgba(218,207,118,0.75)] transition-shadow duration-300"
-          key={3}
-          animationInitial={{ opacity: 0, y: 50 }}
-          animationVariants={itemAnimado}
-        >
-          <h3 className="text-[#dacf76] font-semibold text-center mb-4">
-            Visión
-          </h3>
-          <p className="text-white">
-            Sin dudas, perdurar en el tiempo es sinónimo de compromiso para
-            quienes nos eligen. Seguiremos siempre sobre esa base, que nos
-            permite continuar con el compromiso y los valores que caracterizaron
-            a nuestra organización desde sus inicios.
-          </p>
-        </FramerComponent>
+        <Card
+          icon={<FaShoppingCart className="text-4xl mb-4 text-blue-600" />}
+          title="Comercialización Online"
+          items={[
+            "Diseño de Plan Estratégico",
+            "Definición propósitos de proyecto de negocio",
+            "Análisis interno y externo",
+            "Establecimiento de objetivos",
+            "Elaboración de presupuesto",
+            "Desarrollo e implementación del plan de acción",
+            "Capacitación RRHH sobre el nuevo entorno comercial",
+          ]}
+          itemAnimado={itemAnimado}
+        />
+
+        <Card
+          icon={<FaBullhorn className="text-4xl mb-4 text-blue-600" />}
+          title="Marketing"
+          items={[
+            "Diseño y puesta en marcha de sitios online",
+            "Integraciones y sincronizaciones plataformas",
+            "Diseño digital",
+            "Community Management",
+            "Generación de tráfico",
+            "Redes sociales",
+            "Ads",
+          ]}
+          itemAnimado={itemAnimado}
+        />
+
+        <Card
+          icon={<FaCogs className="text-4xl mb-4 text-blue-600" />}
+          title="Gestión"
+          items={[
+            "Altas/Modificaciones/Bajas de publicaciones",
+            "Verificación publicaciones en sitios",
+            "Gestión activa 24/7 Respuestas",
+            "Procesamiento de pedidos",
+            "Generación de etiquetas",
+            "Coordinación Facturación",
+            "Creación de colectas",
+            "Trazabilidad de pedidos",
+            "Seguimiento de stocks",
+            "Controler de liquidaciones",
+          ]}
+          itemAnimado={itemAnimado}
+        />
       </FramerComponent>
     </div>
   );
