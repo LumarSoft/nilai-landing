@@ -13,13 +13,12 @@ const CategoryCard = ({ category }: any) => {
       <CardContent>
         <div className="flex flex-wrap gap-2">
           {category.subcategories.map((subcategory: any, subIndex: any) => (
-            <Badge
+            <span
               key={subIndex}
-              variant="secondary"
               className="text-sm font-medium"
             >
               {subcategory}
-            </Badge>
+            </span>
           ))}
         </div>
       </CardContent>

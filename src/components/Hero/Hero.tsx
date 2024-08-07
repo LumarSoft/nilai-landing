@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section className="lg:pb-20 flex flex-col gap-6 lg:flex-row xl:gap-20 lg:justify-between">
       <FramerComponent
-        style="flex flex-col gap-6 lg:pt-24 lg:max-w-lg"
+        style="flex flex-col gap-6  lg:max-w-lg"
         animationInitial={{ x: -200, opacity: 0 }}
         animationAnimate={{ x: 0, opacity: 1 }}
       >

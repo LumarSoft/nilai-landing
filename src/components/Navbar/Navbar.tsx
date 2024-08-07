@@ -22,14 +22,17 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`h-16 w-full flex justify-between px-4 md:px-28 2xl:px-80 2xl:h-28 items-center py-4 fixed z-20 bg-white transition-shadow duration-500 ${
+      className={`h-16 w-full flex justify-between px-4 md:px-28 2xl:px-80 2xl:h-20 items-center py-4 fixed z-20 bg-white transition-shadow duration-500 ${
         scrolled ? "shadow-xl" : ""
       }`}
     >
-      <a href={"/"} className="font-bold text-2xl">
+      <a href={"/"}>
         <div className="flex items-center">
           <img src="/logo-nilai.png" className="h-16 w-16 mt-5" />
-          <h1><i>NILAI</i></h1>
+          <div className="flex items-center">
+            <h3 className="font-bold text-2xl">NILAI</h3>
+            <i className="text-xs mt-[0.4rem]">b2c</i>
+          </div>
         </div>
       </a>
       <div className="flex gap-2 md:gap-4 items-center">
