@@ -29,9 +29,9 @@ export const Navbar = () => {
       <a href={"/"}>
         <div className="flex items-center">
           <img src="/logo-nilai.png" className="h-16 w-16 mt-5" />
-          <div className="flex items-center">
-            <h3 className="font-bold text-2xl">NILAI</h3>
-            <i className="text-xs mt-[0.4rem]">b2c</i>
+          <div className="flex flex-col items-start"> {/* flex-col para que b2c quede debajo */}
+            <h3 className="font-bold text-2xl leading-none">NILAI</h3> {/* leading-none para reducir espacio */}
+            <i className="text-xs mt-[-0.2rem]">b2c</i> {/* mt negativo para acercar "b2c" */}
           </div>
         </div>
       </a>
